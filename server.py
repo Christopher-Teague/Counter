@@ -4,7 +4,7 @@ app.secret_key = 'BoomBaby'
 
 @app.route('/')
 def visit():
-    session['visits'] += int("1") 
+    session['visits'] += int(1) 
     
     if 'visits' in session:
         print('key exists!')
