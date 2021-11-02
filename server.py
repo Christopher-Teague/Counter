@@ -11,15 +11,16 @@ def visit():
         print("key 'visits' does NOT exist")
     return render_template('index.html')
 
+
 @app.route('/destroy_session')
 def reset():
     session['visits'] = int(0)
     return redirect('/')
     
-@app.route('/counter.html')
+@app.route('/counter')
 def counter():
-    session['visits'] += int(2)
-    return render_template('counter.html')
+    session['visits'] += int(1)
+    return redirect('/')
 
 
     session['visits'] = request.form['visits']

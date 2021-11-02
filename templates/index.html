@@ -8,13 +8,17 @@
     <title>Counter</title>
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid ">
         <div class="text-center">
             <h1>Counter</h1>
             <h3>{{session['visits']}} times</h3>
             <div>
-                <button class="btn btn-primary btn-md">test</button>
-                <button class="btn btn-secondary btn-md">test</button>
+                <a href="/counter">
+                <button class="btn btn-primary btn-md">Counter +2</button>
+                </a>
+                <a href="/destroy_session">
+                <button class="btn btn-secondary btn-md">Reset Counter</button>
+                </a>
             </div>
         </div>
 
