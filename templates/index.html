@@ -8,16 +8,15 @@
     <title>Counter</title>
 </head>
 <body>
-    <div class="container-fluid ">
-        <div class="text-center">
-            <h1>Counter</h1>
+    <div class="container-fluid d-flex ">
+        <div class="mt-5 p-5 w-50 mx-auto rounded border border-secondary text-center">
+            <h1>-- Counter --</h1>
+            <p>you have visited this page:</p>
             <h3>{{session['visits']}} times</h3>
-            <div>
-                <a href="/counter">
-                <button class="btn btn-primary btn-md">Counter +2</button>
+            <div class="m-5">
+                <a href="/counter"class="btn btn-primary btn-md">Counter +2
                 </a>
-                <a href="/destroy_session">
-                <button class="btn btn-secondary btn-md">Reset Counter</button>
+                <a href="/destroy_session"class="btn btn-secondary btn-md">Reset Counter
                 </a>
             </div>
         </div>
